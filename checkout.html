@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — Autonomous Enterprise SaaS Products</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --bg2: #12121a;
+    --bg3: #1a1a28;
+    --border: #2a2a3e;
+    --text: #e0e0f0;
+    --text2: #8888aa;
+    --accent: #6c5ce7;
+    --accent2: #a29bfe;
+    --green: #00cec9;
+    --card-bg: #16162a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem 1rem;
+  }
+  a { color: var(--accent2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient(135deg, var(--accent2), var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: .3rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: var(--text2);
+    margin-bottom: 2rem;
+  }
+  .cat-header {
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--accent2);
+  }
+  .checkout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  .checkout-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s, border-color .2s;
+  }
+  .checkout-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+  }
+  .checkout-card h3 { font-size: 1rem; margin-bottom: .3rem; }
+  .checkout-card p {
+    color: var(--text2);
+    font-size: .8rem;
+    line-height: 1.4;
+    flex: 1;
+    margin-bottom: .75rem;
+  }
+  .checkout-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: .5rem;
+  }
+  .checkout-price span {
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--text2);
+  }
+  .check-btn {
+    display: block;
+    text-align: center;
+    padding: .6rem;
+    border-radius: 8px;
+    font-size: .85rem;
+    font-weight: 600;
+    background: var(--accent);
+    color: #fff !important;
+    transition: background .2s;
+  }
+  .check-btn:hover { background: #5a4bd1; }
+  .back-link {
+    display: inline-block;
+    margin: 2rem 0 0;
+    color: var(--text2);
+  }
+  .back-link:hover { color: var(--accent2); }
+  @media (max-width: 640px) {
+    .checkout-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<h1>⚡ Autonomous Enterprise — All Products</h1>
+<p class="subtitle">Browse all 117 SaaS products by category</p>
+
+<h2 class="cat-header">🔌 Api</h2>
+<div class="checkout-grid">
+      <div class="checkout-card">
+        <h3>APIForge</h3>
+        <p>A B2B SaaS platform that automates API integration workflows for enterprises, enabling seamless connection between legac...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_eVqeVe6BX0Zq0FHaSpd7q00" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>ApiGrid</h3>
+        <p>A B2B SaaS platform for building and scaling API-driven products using Python and FastAPI, offering rapid prototyping, r...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_9B65kEbWhcI8fABaSpd7q04" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>DataForge</h3>
+        <p>A B2B SaaS platform for real-time data pipeline orchestration and monitoring, built with Go and Svelte.</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_8x2cN67G17nO6016C9d7q0f" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>DjanbineForge</h3>
+        <p>A modular B2B SaaS platform for building and deploying internal tools with drag-and-drop UI, real-time collaboration, an...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_5kQbJ26BXdMc889bWtd7q0l" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FlowGrid</h3>
+        <p>A collaborative project management and workflow automation platform for B2B teams, enabling seamless task tracking, reso...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZu8wQ7G123u3RT0dLd7q0o" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FunnelForge</h3>
+        <p>A B2B SaaS platform that uses AI to optimize sales funnel workflows, helping teams automate lead scoring, track conversi...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFaeVebWhaA03RT0dLd7q0C" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>GridFlow</h3>
+        <p>A collaborative workspace for agile teams to manage workflows, track sprints, and visualize project timelines in real-ti...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_5kQbJ22lHaA09cd8Khd7q0D" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>LeadForge</h3>
+        <p>A B2B SaaS platform that automates lead qualification and prioritization using AI, integrating with CRM and marketing to...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_bJeaEY4tP4bC0FHe4Bd7q0I" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>NodeForge</h3>
+        <p>A collaborative API development and testing platform for teams, combining Node.js backend with a Svelte frontend. It ena...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_9B67sM0dz6jKgEF8Khd7q0T" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>PivotGrid</h3>
+        <p>A B2B SaaS platform that provides real-time business performance dashboards and automated reporting for mid-market compa...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_dRmcN6f8t23u745aSpd7q11" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>PyFlowForge</h3>
+        <p>A collaborative DevOps platform that helps B2B teams automate deployment pipelines using Python scripts and a Next.js da...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZu00k2lH37y7455y5d7q14" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SaaSForge</h3>
+        <p>A B2B SaaS platform that simplifies and automates API integrations between enterprise systems using FastAPI and a Vue.js...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_dRm6oI9O937ygEF7Gdd7q19" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SaaSGrid</h3>
+        <p>A B2B SaaS platform for managing multi-tenant subscription billing and analytics, built with Next.js and Prisma.</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_14AeVef8t23ufAB5y5d7q1a" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SprintForge</h3>
+        <p>A B2B SaaS platform for agile project teams to streamline workflow, track velocity, and automate retrospectives using Fa...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZu6oI6BX6jKgEFaSpd7q1j" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SprintGrid</h3>
+        <p>A collaborative project management tool for B2B SaaS teams, integrating real-time task tracking, AI-driven sprint planni...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_28E7sM6BX8rSgEFaSpd7q1k" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+    </div>
+<h2 class="cat-header">📊 Analytics</h2>
+<div class="checkout-grid">
+      <div class="checkout-card">
+        <h3>AnalytiFlow</h3>
+        <p>A real-time business analytics dashboard that integrates with multiple data sources (SQL, APIs, CSV) and provides custom...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFa8wQ5xTaA0gEFgcJd7q01" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>AnalytiFlux</h3>
+        <p>A real-time B2B analytics dashboard that integrates with existing data pipelines to provide dynamic, customizable visual...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_5kQ3cwe4pfUkdst0dLd7q02" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FluxAnalytics</h3>
+        <p>A lightweight, real-time business analytics platform built with Python and Flask, offering customizable dashboards and d...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_7sY00k1hD8rS1JL5y5d7q0x" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FluxBoard</h3>
+        <p>A real-time collaborative project management tool for B2B teams, built with Svelte and Tailwind CSS, enabling seamless t...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_9B6cN68K55fG1JL4u1d7q0y" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FluxHire</h3>
+        <p>A B2B SaaS platform that streamlines contingent workforce management for enterprises, offering real-time compliance trac...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_eVq3cw6BX6jK6016C9d7q0z" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Fluxify</h3>
+        <p>A lightweight B2B SaaS platform for real-time workflow automation, enabling teams to integrate APIs, trigger actions, an...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_eVqeVe7G14bCewx4u1d7q0A" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>InsightForge</h3>
+        <p>A B2B SaaS platform that enables businesses to build custom interactive dashboards with React frontend, Python backend, ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZu6oIf8t37yfAB6C9d7q0F" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>InsightVault</h3>
+        <p>A B2B SaaS platform that aggregates and visualizes business data from multiple sources (CRM, ERP, marketing tools) to pr...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZu00k6BX7nO6018Khd7q0G" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>MetrikFlow</h3>
+        <p>A B2B SaaS platform for real-time pipeline analytics and forecasting, built with Next.js and Tailwind CSS, enabling sale...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFaaEY9O937yfABf8Fd7q0N" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>MetrixFlow</h3>
+        <p>A B2B SaaS platform that provides real-time analytics and automated insights for API usage, billing, and customer health...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_14A5kEe4p4bCcope4Bd7q0O" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>TrackFlow</h3>
+        <p>A B2B SaaS platform leveraging FastAPI and React to provide real-time project tracking and workflow automation for distr...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_4gMdRa2lHfUkgEF1hPd7q1E" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+    </div>
+<h2 class="cat-header">⚡ Automation</h2>
+<div class="checkout-grid">
+      <div class="checkout-card">
+        <h3>ApexFlow</h3>
+        <p>A B2B SaaS platform for streamlining cross-departmental workflows using React and Node.js, enabling real-time collaborat...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_6oU7sMbWhgYofAB0dLd7q03" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>CloudFlow Hub</h3>
+        <p>A B2B SaaS platform enabling businesses to create, manage, and automate custom workflows with seamless Stripe billing an...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_cNi4gAe4p23uewxe4Bd7q05" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>CodeFlow</h3>
+        <p>A collaborative development platform for B2B teams to manage code reviews, CI/CD pipelines, and documentation using Pyth...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_14AbJ2d0l8rSdstbWtd7q08" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>ContractFlow</h3>
+        <p>A contract management platform for B2B legal teams to automate drafting, approvals, and renewals. Uses FastAPI for high-...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_00w14od0ldMc7451hPd7q0b" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>DevFlow Sync</h3>
+        <p>A collaborative development platform that integrates Python backend services with React frontends, enabling real-time co...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_3cIcN62lHbE43RT7Gdd7q0k" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FlaskFlow</h3>
+        <p>A lightweight B2B SaaS platform for automated workflow orchestration using Python and Flask, enabling businesses to desi...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_3cI00k5xT4bCgEF2lTd7q0m" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FlowBridge</h3>
+        <p>A lightweight B2B SaaS for automating internal workflow approvals using Go backend and HTMX for dynamic, server-driven U...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_14A4gA4tPcI87452lTd7q0n" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FlowLattice</h3>
+        <p>A B2B SaaS platform for automating cross-team workflow integration and real-time process orchestration, built on Next.js...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_eVq5kE4tP6jK1JL2lTd7q0p" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FlowMatrix</h3>
+        <p>A real-time workflow orchestration platform for mid-size enterprises to design, monitor, and automate complex business p...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_4gM14o6BX5fG0FH2lTd7q0q" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FlowMetric</h3>
+        <p>A B2B SaaS platform that uses Next.js for the frontend and Python for backend analytics to provide real-time workflow op...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_bJe7sM0dz6jKdst5y5d7q0r" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FlowStack</h3>
+        <p>A B2B SaaS platform for building and managing internal tools, combining Next.js frontend with FastAPI backend and Stripe...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_8x214o9O9aA01JLbWtd7q0s" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FlowStruct</h3>
+        <p>A B2B SaaS platform for visually designing and deploying backend logic as JSON workflows, integrating with any API or da...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_bJecN6f8t4bC2NP2lTd7q0t" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FlowSync</h3>
+        <p>A B2B SaaS for streamlining cross-team workflow approvals and task handoffs using Django and HTMX for real-time, server-...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_00w14oaSdaA08898Khd7q0u" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FlowVault</h3>
+        <p>A document management and workflow automation platform for mid-sized enterprises, enabling secure storage, version contr...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_28EbJ2f8tgYoagh7Gdd7q0v" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Flowlytics</h3>
+        <p>A next-gen analytics platform for B2B SaaS, using AI to predict churn and upsell opportunities from product usage data.</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_7sY4gA9O90Zq7457Gdd7q0w" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>FormaFlow</h3>
+        <p>A dynamic document generation and workflow automation platform for B2B enterprises, leveraging FastAPI for high-performa...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_7sY8wQbWh4bC745e4Bd7q0B" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>GrowFlow Metrics</h3>
+        <p>A B2B SaaS platform for subscription-based businesses to track, analyze, and optimize their recurring revenue metrics, i...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_7sY5kEf8tbE40FH0dLd7q0E" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>MeridianFlow</h3>
+        <p>A B2B SaaS platform for managing and automating multi-location inventory and supply chain operations in real-time, built...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_3cI00kbWh8rSdst1hPd7q0M" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>NexaFlow</h3>
+        <p>A B2B SaaS platform that automates and optimizes supply chain workflows using real-time data integration and predictive ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFaeVef8t5fG0FHgcJd7q0P" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>NexusFlow</h3>
+        <p>A collaborative workspace platform for B2B teams to manage workflows, automate tasks, and integrate with third-party too...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_28E28se4p9vWewx4u1d7q0Q" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>NimbusFlow</h3>
+        <p>A lightweight project management and collaboration tool for agile teams, built with React, Remix, Prisma, and SQLite for...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_7sY00k3pLfUk0FHbWtd7q0R" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>OptiFlow</h3>
+        <p>A B2B SaaS platform for workflow automation and process optimization, built with React and FastAPI, enabling teams to st...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_cNi7sMf8t37yfAB1hPd7q0V" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>OrbitFlow</h3>
+        <p>A B2B SaaS platform for managing and optimizing recurring revenue workflows, including subscription billing, usage track...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFa5kE3pLcI8agh0dLd7q0W" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>PivotFlow</h3>
+        <p>A B2B SaaS platform for agile project management and resource allocation, built with Go, Chi, Postgres, and Tailwind CSS...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_3cIaEYf8tfUk9cdbWtd7q10" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>PyFlowMetrics</h3>
+        <p>A B2B SaaS platform that analyzes Python FastAPI application performance in real-time, providing actionable insights for...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_00w3cwf8taA0dstgcJd7q15" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>PyFlowStack</h3>
+        <p>A low-code B2B SaaS platform for building and deploying Python+Flask microservices with integrated CI/CD, monitoring, an...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFa14o2lHfUk745bWtd7q16" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>PyFlow</h3>
+        <p>A lightweight B2B SaaS for managing internal workflows with real-time dashboards, built with Python and HTMX for seamles...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_00wfZi2lHfUkbkl3pXd7q13" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>RailFlow</h3>
+        <p>A B2B SaaS for managing and automating internal workflows, built with Rails and Stimulus for real-time, interactive UI c...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_eVq6oI4tPeQgbkl2lTd7q17" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SprintFlow</h3>
+        <p>A B2B SaaS platform that integrates project management with AI-driven sprint planning and resource allocation for remote...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFa5kE8K5gYo8893pXd7q1i" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SquadFlow</h3>
+        <p>A B2B SaaS platform for managing team workflows and automating recurring tasks, built with Flask and Bulma for rapid dep...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_cNidRabWh23ucop2lTd7q1o" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>StackFlow</h3>
+        <p>A collaboration and workflow automation platform for Node.js and Next.js development teams, integrating AI-powered code ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_6oU4gA1hD9vW8899Old7q1p" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>StackSync</h3>
+        <p>A collaborative project management tool for B2B SaaS teams that syncs real-time code, tasks, and documentation in one wo...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_7sY28s9O94bCaghgcJd7q1t" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>StreamlineSync</h3>
+        <p>A B2B SaaS platform that simplifies multi-channel inventory and order management for e-commerce businesses using Vue.js ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_28EfZi7G14bCaghe4Bd7q1u" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SyncLattice</h3>
+        <p>A collaborative workflow automation platform for B2B teams, integrating project management with real-time data sync acro...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_28E5kE9O99vW9cde4Bd7q1v" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SyncNode</h3>
+        <p>A B2B SaaS platform for managing and automating inter-company data synchronization workflows, built on Node.js and React...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_dRmeVee4p6jK1JL5y5d7q1w" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SyncSwift</h3>
+        <p>A B2B SaaS platform leveraging FastAPI and MongoDB for rapid API development and scalable data management, enabling busi...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_5kQ5kE7G1gYofABgcJd7q1x" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SyncVault</h3>
+        <p>A B2B SaaS platform that centralizes and automates API integrations between enterprise tools, reducing development time ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZu14ogcxfUk3RT7Gdd7q1y" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SynthexFlow</h3>
+        <p>A B2B SaaS platform that automates cross-departmental workflow orchestration with real-time analytics, enabling teams to...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_bJe6oI2lH8rS6013pXd7q1A" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>TaskFlow</h3>
+        <p>A project management tool designed for remote teams to streamline workflows, track progress, and enhance collaboration t...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_4gM14ogcx37y0FH5y5d7q1B" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>TaskFusion</h3>
+        <p>A B2B SaaS platform for orchestrating complex workflows with Django and Celery. It enables businesses to automate, monit...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZu28sf8t5fGcop3pXd7q1C" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>TaskTide</h3>
+        <p>A collaborative project management platform for remote teams, offering real-time task tracking, resource allocation, and...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZubJ27G1fUkbklgcJd7q1D" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>VeldtSync</h3>
+        <p>A lightweight B2B SaaS platform for real-time collaboration on data pipelines built with Svelte for the frontend and Nod...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_7sY4gAf8teQg9cd4u1d7q1F" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>VibeFlow</h3>
+        <p>A team collaboration platform that uses AI to analyze communication patterns and optimize workflow, integrating with Sla...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_9B628sf8t8rSaghf8Fd7q1G" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>WorkflowForge</h3>
+        <p>A B2B SaaS platform that uses Laravel and Livewire to streamline team workflows and automate repetitive tasks. Designed ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFa00kf8taA08894u1d7q1K" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>WorkflowFuse</h3>
+        <p>A collaborative workflow automation platform for mid-size B2B teams, combining low-code triggers with real-time analytic...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZucN6gcx5fG1JL1hPd7q1L" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>WorkflowPulse</h3>
+        <p>A B2B SaaS platform that integrates with Express.js and Handlebars to provide real-time workflow analytics and team coll...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_dRm28s6BX9vWagh4u1d7q1M" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>WorkflowSync</h3>
+        <p>A B2B SaaS platform that integrates and automates cross-departmental workflows, enabling real-time collaboration and pro...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZubJ28K5cI8gEF9Old7q1N" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>WorkframeSync</h3>
+        <p>A B2B SaaS platform for real-time collaboration on shared project workflows, built with Go backend and Svelte frontend.</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_6oU14o0dz37yewx8Khd7q1O" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>ZennFlow</h3>
+        <p>A B2B SaaS platform for automating and optimizing cross-team workflow approvals with real-time analytics and Slack/Teams...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_cNicN6bWh6jK7457Gdd7q1P" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Zentask</h3>
+        <p>A collaborative project management platform for remote teams, integrating AI-powered task prioritization and real-time a...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_9B66oIgcxeQgewx9Old7q1Q" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>ZentriFlow</h3>
+        <p>A B2B SaaS platform for managing cross-team workflows with real-time analytics and automated task routing.</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFa3cw8K50Zqdst2lTd7q1R" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+    </div>
+<h2 class="cat-header">📈 Sales</h2>
+<div class="checkout-grid">
+      <div class="checkout-card">
+        <h3>CloudPivot</h3>
+        <p>A B2B SaaS platform for managing multi-cloud infrastructure, providing unified monitoring, cost optimization, and automa...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_28EcN6aSd9vW4VX1hPd7q06" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>LeadStream</h3>
+        <p>A multi-tenant B2B SaaS platform that automates lead qualification, enrichment, and routing using AI-powered scoring and...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_8x200ke4pdMc3RT6C9d7q0J" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Pipeless</h3>
+        <p>A B2B SaaS that integrates with existing CRMs to automate and optimize sales pipeline management using AI-driven lead sc...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_3cIaEYbWh0Zq1JL0dLd7q0Y" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Pipelinr</h3>
+        <p>A lightweight, real-time sales pipeline management tool for B2B teams, integrating with existing CRMs and offering predi...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_00w7sMf8tfUkdst4u1d7q0Z" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Pivoto</h3>
+        <p>B2B SaaS platform for agile project management with AI-driven risk prediction and resource optimization.</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_cNi7sM2lH5fGewx0dLd7q12" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+    </div>
+<h2 class="cat-header">💻 Development</h2>
+<div class="checkout-grid">
+      <div class="checkout-card">
+        <h3>CodeBridge</h3>
+        <p>A collaborative analytics platform for Python developers building Vue.js dashboards, enabling real-time data sharing and...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_3cI14o7G137ydst9Old7q07" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Nodewire</h3>
+        <p>A B2B SaaS platform for real-time API orchestration and monitoring on Node.js/Express, with MongoDB for config storage a...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_cNieVe4tP0Zq0FH7Gdd7q0U" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+    </div>
+<h2 class="cat-header">🗄️ Data</h2>
+<div class="checkout-grid">
+      <div class="checkout-card">
+        <h3>CodePulse</h3>
+        <p>A real-time code collaboration and review platform for remote development teams, integrating with major Git providers an...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_14A7sM6BXaA06018Khd7q09" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>ContractPulse</h3>
+        <p>A B2B SaaS platform that automates contract analysis and lifecycle management for legal teams, extracting key clauses an...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_cNi14obWhcI8agh3pXd7q0c" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>ContractVault</h3>
+        <p>A contract lifecycle management platform for small-to-midsize legal teams that uses Remix for server-rendered dashboards...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_dRm7sMaSd5fGcopd0xd7q0d" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>DataPulse</h3>
+        <p>Real-time API analytics and monitoring platform for B2B SaaS applications, providing insights into usage patterns, error...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFa14ogcx5fGgEF7Gdd7q0g" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>DataVault</h3>
+        <p>A secure data backup and recovery SaaS for small to medium businesses, leveraging Astro for frontend, FastAPI for backen...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_eVqdRa5xT7nO8899Old7q0h" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Dataloom</h3>
+        <p>A collaborative data workspace for B2B teams to collect, transform, and visualize data from multiple sources with real-t...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_14A7sMaSd8rSgEF3pXd7q0i" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SprintPulse</h3>
+        <p>Agile project management for B2B teams with real-time analytics, task dependencies, and AI-driven sprint planning.</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_7sYbJ28K523u2NP0dLd7q1m" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>StackPulse</h3>
+        <p>A B2B SaaS platform on Next.js and Supabase that provides real-time monitoring and analytics for cloud infrastructure, h...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_bJe7sM6BXdMc8890dLd7q1r" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+    </div>
+<h2 class="cat-header">🛠️ Devops</h2>
+<div class="checkout-grid">
+      <div class="checkout-card">
+        <h3>CodeShelf</h3>
+        <p>A collaborative code snippet manager for B2B teams, enabling sharing, versioning, and discovery of reusable code compone...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_3cI7sMe4p0Zq0FHf8Fd7q0a" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>DeployPilot</h3>
+        <p>A B2B SaaS that automates deployment workflows for cloud-native teams, integrating CI/CD pipelines, environment manageme...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFacN69O9dMcdst9Old7q0j" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>NimbusStack</h3>
+        <p>A modular B2B SaaS platform for managing cloud infrastructure resources, enabling teams to provision, monitor, and optim...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_6oUeVe4tPgYofABgcJd7q0S" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SentinelOps</h3>
+        <p>A real-time monitoring and incident response platform for DevOps teams, offering customizable alerts, automated runbooks...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_dRm28s5xTcI8bkl0dLd7q1e" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>ShelfStack</h3>
+        <p>A centralized asset management platform for B2B teams to organize, track, and deploy digital assets across campaigns.</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_cNi00k3pLcI81JL4u1d7q1f" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SprintStack</h3>
+        <p>A B2B SaaS platform that helps remote software teams automate sprint planning, track velocity, and reduce meeting time b...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_00w14o6BX23ufAB8Khd7q1n" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>StackPilot</h3>
+        <p>A B2B SaaS platform for Node.js and Vue.js teams to streamline full-stack development with automated project scaffolding...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_3cI4gAf8t6jKbkl3pXd7q1q" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>StackSift</h3>
+        <p>A B2B SaaS platform for automated codebase analysis and dependency management, helping engineering teams identify techni...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZudRa7G17nO1JLf8Fd7q1s" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>VueStack</h3>
+        <p>A B2B SaaS platform that enables teams to rapidly build and deploy internal tools using Vue.js frontends and Django back...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_5kQ00k9O9bE49cd7Gdd7q1I" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+    </div>
+<h2 class="cat-header">📝 Contracts</h2>
+<div class="checkout-grid">
+      <div class="checkout-card">
+        <h3>Contractus</h3>
+        <p>A B2B SaaS platform that streamlines enterprise contract management using AI-powered negotiation analysis and automated ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_eVq6oI6BX23uaghd0xd7q0e" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>MergeMind</h3>
+        <p>A B2B SaaS platform that integrates Next.js frontends with OpenAI-driven analytics to automatically merge and reconcile ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_8x2bJ27G1eQgbkl5y5d7q0L" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+    </div>
+<h2 class="cat-header">🚀 General</h2>
+<div class="checkout-grid">
+      <div class="checkout-card">
+        <h3>JsonSculpt</h3>
+        <p>Automated API schema validation and documentation generator for FastAPI, ensuring contract-first development and reducin...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_8x23cwd0lfUkdst7Gdd7q0H" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>LogStream</h3>
+        <p>A real-time log aggregation and alerting platform for engineering teams. It ingests logs from distributed services, prov...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_7sYcN61hD9vW0FH0dLd7q0K" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>RepliCache</h3>
+        <p>A distributed query caching and result deduplication layer for FastAPI services using Redis, designed to reduce database...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_4gMcN6d0l9vW7452lTd7q18" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SaaSify</h3>
+        <p>A B2B SaaS platform that provides a comprehensive solution for managing subscription-based services, including billing, ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_8x228sf8t23udst3pXd7q1b" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SaaSpectra</h3>
+        <p>A B2B SaaS platform built on Next.js that provides real-time analytics and predictive insights for subscription-based bu...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_7sYfZi6BX8rS4VX7Gdd7q1c" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SaasFusion</h3>
+        <p>A B2B SaaS platform built with Rails and Bootstrap that integrates and automates multi-channel customer communication fo...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_eVqaEY2lHaA0fAB7Gdd7q1d" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Skope</h3>
+        <p>A B2B SaaS platform for real-time competitive intelligence, using AI to scan public data and provide actionable insights...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_fZudRa8K5fUkcop9Old7q1g" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SynthexAI</h3>
+        <p>A B2B SaaS platform that leverages GPT-4o to generate synthetic datasets for training machine learning models, enabling ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_cNidRa3pL0Zq1JL9Old7q1z" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Vocalytics</h3>
+        <p>A B2B SaaS platform that uses real-time voice transcription (Whisper) and AI-driven analytics to extract actionable insi...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_8x25kE4tPdMc601bWtd7q1H" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>Zeronic</h3>
+        <p>Zero-config API builder for B2B teams — instantly deploy scalable backends with FastAPI and Next.js dashboards.</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_eVqcN6bWhcI83RT8Khd7q1S" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+    </div>
+<h2 class="cat-header">✅ Productivity</h2>
+<div class="checkout-grid">
+      <div class="checkout-card">
+        <h3>PipeHive</h3>
+        <p>A workflow automation platform for B2B teams to design, execute, and monitor complex task sequences using Django and Cel...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_00weVe7G10ZqfAB3pXd7q0X" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SprintBridge</h3>
+        <p>A B2B SaaS platform for cross-team project orchestration, integrating task management, resource allocation, and real-tim...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_cNicN6d0lcI81JL5y5d7q1h" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>SprintHive</h3>
+        <p>A collaborative project management platform for remote teams, integrating sprint planning, real-time progress tracking, ...</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFa4gAgcxfUkfAB8Khd7q1l" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+      <div class="checkout-card">
+        <h3>WorkHive</h3>
+        <p>A collaborative workflow platform for B2B teams, integrating task management, real-time communication, and analytics.</p>
+        <div class="checkout-price">$29<span>/month</span></div>
+        <a href="https://buy.stripe.com/test_aFa28se4pfUkbkl3pXd7q1J" class="btn-primary check-btn" target="_blank">Buy Now — $29/mo</a>
+      </div>
+    </div>
+
+
+<p style="text-align:center;margin-top:2rem">
+  <a href="storefront.html" class="back-link">← Back to Storefront</a>
+</p>
+</body>
+</html>
